@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>LISTA CAGNI</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://kit.fontawesome.com/2d7d088a56.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <header class="container-head">
+         <div class="header">
+            <div id="container-header">
+               <h1>Benvenuto, spero che il mio tool ti piaccia.</h1>
+               <h2>Si tratta di un semplice ma utile todolist in Javascript (in grado di salvare le note).</h2>
+               <img src="https://www.hallofseries.com/wp-content/uploads/2017/02/mr-robot-meme.jpg" class="mrrobot" />
+            </div>
+            <div class="navbar-fixed">
+               <div class="nav-wrapper"></div>
+               <div class="header-banner">
+               </div>
+               <nav class="transparentt">
+                  <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#sezione1">Salva note</a></li>
+                  <li><a href="#sezione2">Aggiungi nota</a></li>
+                  <li><a href="#sezione3">Da svolgere</a></li>
+                  <li><a href="#sezione4">Già svolte</a></li>
+                  <li><a href="#sezione5">Elimina tutte le note</a></li>
+                  <ul>
+               </nav>
+            </div>
+      </header>
+      </div>   </div>    
+      <div class="container full">
+         <div class="row center center-align">
+            <div class="col s12">
+               <div id="main" class="card">
+                  <div class="card-content">
+                     <img src="https://glue-labs.com/wp-content/uploads/2019/06/2-1.png" float="center" width="80px" />
+                     <h1><span class="card-title"></span><span class="styling">LISTA</span>CAGNI <i class="fas fa-clipboard-list"></i></span></h1>
+                     <img id="sezione1"  src="https://cdn.pixabay.com/photo/2017/03/18/21/29/divider-2154993_960_720.png" float="center" width="200px" />          
+                     <div class="containr">
+                        <button id="js-save" class="button save btn blacck">SALVA LE NOTE 💾</button>
+                        <section class="todo__add">
+                           <img id="sezione2" src="https://cdn.pixabay.com/photo/2017/03/18/21/29/divider-2154993_960_720.png" float="center" width="200px" />
+                           <div class="todo__title-wrap" id="js-label-add">
+                              <label for="js-new-task" class="section__title section__title--add">Aggiungi nota</label>
+                           </div>
+                           <input id="js-new-task" class="text-input task__input--new" type="text">
+                           <button id="js-add-button" class="button btn blacck">Aggiungi nota ➕</button>
+                        </section>
+                        </form>
+                     </div>
+                     <img id="sezione3" src="https://www.festivalclaca.cat/pics/b/21/215598_divider-png.png" width="600px" float="center"/>
+                     <section class="todo__list" onclick="#">
+                        <div class="todo__title-wrap todo__title-wrap--todo" id="js-todo">
+                           <h5 id="task-title">DA SVOLGERE <i class="fas fa-check"></i></h5>
+                        </div>
+                        <ul id="js-incomplete-tasks" class="list">
+                           <li class="task">
+                              <input type="checkbox" class="task__checkbox x">
+                              <label class="task__title">Spero che questa semplice todolist ti sia utile! Questa è una nota d'esempio.</label>
+                              <input type="text" class="text-input task__input">
+                              <button class="button task__delete"><i class="material-icons icon__delete">delete</i></button>
+                              <button class="button task__edit"><i class="material-icons icon__edit">mode_edit</i></button>
+                           </li>
+                        </ul>
+                     </section>
+                     <section class="todo__done">
+                        <div class="todo__title-wrap" id="js-completed">
+                           <img id="sezione4" src="https://www.festivalclaca.cat/pics/b/21/215598_divider-png.png" width="600px" float="center" />
+                           <h5 id="task-title">COMPLETATE <i class="fas fa-check-double"></i></h5>
+                        </div>
+                        <ul id="js-completed-tasks" class="list">
+                           <li class="task">
+                              <input type="checkbox" class="task__checkbox browser-default" checked>
+                              <label class="task__title is-done">Attività di esempio già svolta</label>
+                              <input type="text" class="text-input task__input">
+                              <button class="button task__delete"><i class="material-icons icon__delete">delete</i></button>
+                              <button class="button task__edit"><i class="material-icons icon__edit">mode_edit</i></button>
+                           </li>
+                        </ul>
+                        <div><img id="sezione5"  src="https://www.festivalclaca.cat/pics/b/21/215598_divider-png.png" width="600px" float="center"/></div>
+                        <h5 id="task-title">CANCELLA TUTTO <i class="fas fa-remove-format"></i></h5>
+                        <br>
+                        <a onclick="clearTasks()" class="clear-tasks btn blacck">Cancella tutto <i class="fas fa-trash hey"></i></a>
+                     </section>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      <script src="index.js"></script>
+   </body>
+   <img src="https://pngimage.net/wp-content/uploads/2018/05/bg-images-png.png" class="footer-img" width="1000px" />
+   <footer class="footer">
+      <div id="container-footer">
+         <p aligncontent="left" class="footerCopyright">Copyright © 2019-2020 · by Lorenzo Cagni & NZT-48 with ❤ in Italy | Privacy Policy </p>
+      </div>
+   </footer>
+</html>
